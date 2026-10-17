@@ -47,10 +47,7 @@ const App = () => {
     setAge(item.age)
   }
 
-   function duplicate(item) {
-    setData([...data, { ...item, id: Date.now() }])
-  }
-
+   
    function remove(id) {
     setData(data.filter((item) => item.id !== id))
   }
@@ -92,8 +89,7 @@ const App = () => {
                   <DropdownMenuTrigger render={<Button variant="ghost" size="icon" className="size-8"><MoreHorizontalIcon /><span className="sr-only">Open menu</span></Button>} />
                   <DropdownMenuContent align="end">
                     <DropdownMenuItem onClick={() => startEdit(item)}>Edit</DropdownMenuItem>
-                    <DropdownMenuItem onClick={() => duplicate(item)}>Duplicate</DropdownMenuItem>
-                    <DropdownMenuSeparator />
+                     <DropdownMenuSeparator />
                     <DropdownMenuItem variant="destructive" onClick={() => remove(item.id)}>
                       Delete
                     </DropdownMenuItem>

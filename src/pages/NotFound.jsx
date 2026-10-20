@@ -1,14 +1,11 @@
-import React from 'react'
+import React from "react";
 import { Link } from "react-router";
 
-const NotFound = () => {
-  return (
-    <div>
-        <h1>NOT FOUND</h1>
-       <Link to={'/'}>Home</Link>
-
-    </div>
-  )
-}
-
-export default NotFound
+const Notfound = () => {
+  return <div className="mt-[200px] text-center">
+    <h1 className="text-[50px] text-center">This page is not <br />defind</h1>
+     <Link className="text-[30px] border border-red-500 text-red-500 text-center rounded-full p-[10px]" to={"/"}>Home</Link>
+    </div>;
+};
+ 
+ export default Notfound;

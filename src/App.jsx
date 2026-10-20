@@ -2,12 +2,9 @@ import React from 'react'
 import Layout from './Layout/Layout'
  import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
-import NotFound from './pages/NotFound';
- import Home from './pages/Home';
- import Careers from './pages/Careers';
-import CareerDetails from './pages/CareerDetails';
-import Contact from './pages/Contact';
-import Services from './pages/Services';
+  import Home from './pages/Home'; 
+import Products from './pages/Products';
+import ProductsById from './pages/ProductsById';
  
  const App = () => {
   const router = createBrowserRouter([
@@ -20,26 +17,15 @@ import Services from './pages/Services';
         element: <Home/>
       },
       {
-        path: 'services',
-        element: <Services/>
+        path:'products', 
+        element : <Products/>
       },
       {
-        path: 'careers',
-        element: <Careers/>
+        path:'products', 
+        element : <ProductsById/>
       },
-      {
-        path: 'careerDetails',
-        element: <CareerDetails/>
-      },
-      {
-        path: 'Contact',
-        element: <Contact/>
-      },
+       
     ]
-  },
-  {
-    path:'*',
-    element : <NotFound/>
   }
 ]);
    return (

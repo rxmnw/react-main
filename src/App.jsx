@@ -11,7 +11,7 @@ import NotFound from './pages/NotFound';
   const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout/>,
+    element: <Layout/.
     children : [
       {
         index : true,
@@ -39,4 +39,4 @@ import NotFound from './pages/NotFound';
    )
  }
  
- export default App
+ export default AppP

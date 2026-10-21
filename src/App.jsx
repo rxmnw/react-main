@@ -5,6 +5,7 @@ import Layout from './Layout/Layout';
 import Home from './pages/Home';
 import Catalog from './pages/Catalog';
 import AboutUs from './pages/AboutUs';
+import NotFound from './pages/NotFound';
 
  const App = () => {
   const router = createBrowserRouter([
@@ -26,6 +27,10 @@ import AboutUs from './pages/AboutUs';
       },
     ]
   },
+  {
+    path : '*',
+    element : <NotFound/>
+  }
 ]);
    return (
      <>

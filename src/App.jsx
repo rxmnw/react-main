@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { lazy, Suspense } from 'react'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from './Layout/Layout';
 import Birzha from './pages/Birzha';
-import Works from './pages/Works';
-import Competitions from './pages/Competitions';
+ import Competitions from './pages/Competitions';
 import CreateWork from './pages/CreateWork';
 import CreateOrder from './pages/CreateOrder';
+const Works = lazy(() => import ("./pages/Works"))
  
  const App = () => {
   const router = createBrowserRouter([
@@ -19,7 +19,10 @@ import CreateOrder from './pages/CreateOrder';
   },
   {
     path:'/vorky',
-    element:<Works/>
+    element:
+    <Suspense fallback = {<div><h1>LOADING...........</h1></div>}>
+      <Works/>
+    </Suspense>
   },
   {
     path:'/konkursi',

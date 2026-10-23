@@ -286,9 +286,7 @@ const Konkursi = () => {
               </div>
             </div>
             <p className="text-[12px] mt-[10px]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus
-              tincidunt eget eu, eget commodo condimentum non, fringilla
-              fermentum.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla  fermentum.
             </p>
           </div>
           <div className="border border-[#F2F0FE] bg-white rounded-[15px] p-[15px]">
@@ -311,15 +309,12 @@ const Konkursi = () => {
           </div>
  <div className="border border-[#F2F0FE] bg-white rounded-[15px] p-[15px]">
             <div className="flex gap-[10px] items-center">
-              <img
-                className="w-[40px] h-[40px] rounded-full bg-gray-300"
-                src=""
-                alt=""
-              />
+              <img className="w-[40px] h-[40px] rounded-full bg-gray-300"  src=""  alt="" />
               <div>
                 <h3 className="text-[14px]">Никита Евреев</h3>
                 <p className="text-[#FBA457]">★★★★★</p>
               </div>
+
             </div>
             <p className="text-[12px] mt-[10px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus

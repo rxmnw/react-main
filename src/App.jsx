@@ -1,8 +1,9 @@
 import React, { lazy, Suspense } from 'react'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from './Layout/Layout';
-const Works = lazy(() => import ("./pages/Works"))
- 
+import AboutUs from './pages/AboutUs';
+import Courses from './pages/Courses';
+  
  const App = () => {
   const router = createBrowserRouter([
   {
@@ -11,23 +12,20 @@ const Works = lazy(() => import ("./pages/Works"))
     children:[
       {
    index:true,
-    element: <Birzha/>,
+    element: <AboutUs/>,
   },
-  {
-    path:'/vorky',
-    element:
-    <Suspense fallback = {<div><h1>LOADING...........</h1></div>}>
-      <Works/>
-    </Suspense>
-  }
+      {
+  path:'courses',
+    element: <Courses/>,
+  },
     ]
   }
 ]);
   return (
-  <RouterProvider router={router} />
+  <RouterProvider router={router} />   
   )
 }
 
 export default App
 
-//app.jsx
+ 

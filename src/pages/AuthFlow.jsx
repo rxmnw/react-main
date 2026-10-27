@@ -1,12 +1,11 @@
 import React, { useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 const AuthFlow = ({children}) => {
 
     const navigate = useNavigate()
     const location = useLocation()
     
-
 useEffect( () => {
     const token = localStorage.getItem('token')
     const isLoginPage = location.pathname === '/login'

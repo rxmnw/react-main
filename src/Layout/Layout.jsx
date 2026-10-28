@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Outlet } from 'react-router'
+ import { Link, Outlet } from 'react-router'
 
 const Layout = () => {
   return (
@@ -11,7 +11,5 @@ const Layout = () => {
     </div>
        <Outlet/> 
    </>
-  )
-}
-
-export default Layout
+) 
+}       

@@ -80,8 +80,7 @@ const App = () => {
         <div className='flex flex-wrap items-end justify-between gap-4 mb-8'>
           <div>
             <h1 className='text-4xl font-black tracking-tight text-stone-900'>Users</h1>
-            <p className='text-stone-500 mt-1'>{state.data.length} people in your list</p>
-          </div>
+           </div>
 
           <div className='flex gap-3'>
             <div className='relative'>
